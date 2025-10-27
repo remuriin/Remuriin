@@ -390,6 +390,13 @@ public class PacMan_Exe extends JPanel implements ActionListener
         super.paintComponent(g);
         Graphics2D gfx = (Graphics2D) g;
 
+        gfx.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION,
+                             java.awt.RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+        gfx.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING,
+                             java.awt.RenderingHints.VALUE_RENDER_QUALITY);
+        gfx.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING,
+                             java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
         switch (currentState)
         {
             case MENU:
