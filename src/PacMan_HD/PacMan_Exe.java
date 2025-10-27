@@ -453,13 +453,13 @@ public class PacMan_Exe extends JPanel implements ActionListener
     {
         SwingUtilities.invokeLater(() ->
         {
-            JFrame window = new JFrame("Pacman_HD");
-            window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            JFrame frame = new JFrame("Pacman_HD");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             PacMan_Exe panel = new PacMan_Exe();
-            window.setContentPane(panel);
-            window.pack();
-            window.setLocationRelativeTo(null);
-            window.setVisible(true);
+            frame.setContentPane(panel);
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
         });
     }
 }
