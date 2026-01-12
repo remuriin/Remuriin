@@ -22,7 +22,6 @@ public class PacMan_Exe extends JPanel implements ActionListener
     int playerX = 26 * 10;
     int playerY = 51 * 10;
     final int playerW = 32;
-    final int playerH = 32;
 
     private int spriteFrameCount = 0;
     private int currentSpriteFrame = 2;
@@ -32,7 +31,7 @@ public class PacMan_Exe extends JPanel implements ActionListener
     final int hitBoxW = 40;
     final int hitBoxH = 40;
 
-    final int speed = 1;
+    final int speed = 2;
     static private boolean debug = false;
 
     String currentD = "NONE";

@@ -152,22 +152,26 @@ public class PacMan_MapBuilder extends JPanel
             int xAxis = x;
             int yAxis = y;
 
-            if (mapTemplate[row][column] == 5)
+            switch (mapTemplate[row][column])
             {
-                roundTopLeft = true;
-                xAxis += outlineThickness;
-                yAxis += outlineThickness;
-            } else if (mapTemplate[row][column] == 6)
-            {
-                roundTopRight = true;
-                yAxis += outlineThickness;
-            } else if (mapTemplate[row][column] == 7)
-            {
-                roundBottomLeft = true;
-                xAxis += outlineThickness;
-            } else if (mapTemplate[row][column] == 8)
-            {
-                roundBottomRight = true;
+                case 5:
+                    roundTopLeft = true;
+                    xAxis += outlineThickness;
+                    yAxis += outlineThickness;
+                    break;
+                case 6:
+                    roundTopRight = true;
+                    yAxis += outlineThickness;
+                    break;
+                case 7:
+                    roundBottomLeft = true;
+                    xAxis += outlineThickness;
+                    break;
+                case 8:
+                    roundBottomRight = true;
+                    break;
+                default:
+                    break;
             }
 
             Path2D.Float path = new Path2D.Float();

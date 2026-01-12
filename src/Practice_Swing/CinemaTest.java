@@ -1,6 +1,7 @@
 package Practice_Swing;
-
 import javax.swing.JFrame;
+
+import Practice_Swing.UI_Panels.Menu_Panel;
 
 public class CinemaTest
 {
@@ -14,6 +15,5 @@ public class CinemaTest
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.add(new Menu_Panel());
         frame.setVisible(true);
-
     }
 }

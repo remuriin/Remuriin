@@ -1,4 +1,4 @@
-package Practice_Swing;
+package Practice_Swing.UI_Panels;
 
 import java.awt.Image;
 import javax.imageio.ImageIO;
